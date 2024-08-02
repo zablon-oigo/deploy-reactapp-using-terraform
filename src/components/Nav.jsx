@@ -1,7 +1,8 @@
 import React from 'react'
+import { nav } from '../data'
 
 export default function Nav() {
   return (
-    <div>Nav</div>
+    <nav className=""></nav>
   )
 }
