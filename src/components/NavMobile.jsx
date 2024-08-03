@@ -15,11 +15,12 @@ export default function NavMobile({ navMobile }) {
             </a>
           </li>
         ))}
-      </ul>
-      <div className="flex justify-center mt-8 gap-x-8">
+        <div className="flex justify-center mt-8 gap-x-8">
         <button className="text-white btn btn-lg">Log in</button>
         <button className="btn btn-lg btn-primary">Sign up</button>
       </div>
+      </ul>
+      
     </nav>
   )
 }
