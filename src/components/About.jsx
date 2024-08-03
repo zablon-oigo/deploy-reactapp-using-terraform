@@ -13,10 +13,10 @@ export default function About() {
           <span className="text-primary-200">.</span>
         </h2>
       </div>
-      <p className="md:text-body-md">
+      <p className="mb-12 md:text-body-md">
         {subtitle1}
       </p>
-      <p className="">
+      <p className="mb-8 md:text-body-md">
         {subtitle2}
       </p>
     </div>
