@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import About from "./components/About"
 import Banner from "./components/Banner"
 import Header from "./components/Header"
+import Workout from "./components/Workout";
 
 function App() {
   Aos.init({
@@ -15,7 +16,7 @@ function App() {
      <Header/>
      <Banner/>
      <About/>
-
+     <Workout/>
     </div>
     </>
   )
