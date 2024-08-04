@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section className=" py-[80px] md:py-[110px] lg:pt-[140px] lg:pb-[180px] ">
       <div className='container mx-auto'>
-      <div className="justify-start secton-title-group">
+      <div className="justify-start secton-title-group" data-aos='fade-up' data-aos-delay='100'>
         <img src={icon} alt="" className="" />
         <h2 className="h2 section-title">
           {title}
