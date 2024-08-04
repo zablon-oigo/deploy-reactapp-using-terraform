@@ -1,10 +1,10 @@
 import React from 'react'
 import { about } from '../data'
-import {IoIosArrowDropdownCircle} from 'react-icons/io'
+import {IoIosArrowDroprightCircle} from 'react-icons/io'
 export default function About() {
   const{title,subtitle1,subtitle2,icon,link}=about;
   return (
-    <section className="bg-pink-200 py-[80px] md:py-[110px] lg:pt-[140px] lg:pb-[180px] ">
+    <section className=" py-[80px] md:py-[110px] lg:pt-[140px] lg:pb-[180px] ">
       <div className='container mx-auto'>
       <div className="justify-start secton-title-group">
         <img src={icon} alt="" className="" />
@@ -19,6 +19,12 @@ export default function About() {
       <p className="mb-8 md:text-body-md">
         {subtitle2}
       </p>
+    </div>
+    <div className="">
+      <a href="" className="flex items-center transition-all link gap-x-4 hover:gap-x-6 ">
+        {link}
+        <IoIosArrowDroprightCircle className='text-2xl'/>
+      </a>
     </div>
     </section>
   )
