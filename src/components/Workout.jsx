@@ -1,5 +1,6 @@
 import React from 'react'
 import { workouts } from '../data'
+import WorkoutSlider from './WorkoutSlider';
 export default function Workout() {
     const{title,icon}=workouts;
   return (
