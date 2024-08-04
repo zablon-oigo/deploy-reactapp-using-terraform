@@ -8,6 +8,7 @@ export default function Workout() {
             <img src={icon} alt="" className="" />
             <h2 className="h2 section-title">
                 {title}
+                <span className="text-primary-200">.</span>
             </h2>
         </div>
     </div>
