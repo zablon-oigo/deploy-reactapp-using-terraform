@@ -11,8 +11,14 @@ export default function WorkoutSlider() {
   return (
     <Swiper>
       {programs.map((program,idx)=>{
-        return <SwiperSlide>
-          slide
+        const{image,name}=program
+        return <SwiperSlide className='max-w-[320px]' key={idx}>
+         <img src={program.image} alt="" className="" />
+         <div className="">
+          <div className="">
+            {name}
+          </div>
+         </div>
         </SwiperSlide>
       })}
     </Swiper>
