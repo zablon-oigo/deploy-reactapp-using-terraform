@@ -4,7 +4,7 @@ import WorkoutSlider from './WorkoutSlider';
 export default function Workout() {
     const{title,icon}=workouts;
   return (
-    <div className='section'>
+    <section className='section'>
         <div className="section-title-group max-w-[540px] mx-auto   px-4 lg:px-0">
             <img src={icon} alt="" className="" />
             <h2 className="h2 section-title">
@@ -12,6 +12,9 @@ export default function Workout() {
                 <span className="text-primary-200">.</span>
             </h2>
         </div>
-    </div>
+        <div className="">
+          <WorkoutSlider/>
+        </div>
+    </section>
   )
 }
