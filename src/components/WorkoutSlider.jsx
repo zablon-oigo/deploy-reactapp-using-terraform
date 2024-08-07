@@ -3,7 +3,7 @@ import {workouts} from '../data'
 import {Swiper,SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
-import '../WorkoutSlider.css'
+import '../workoutSlider.css'
 
 import {} from 'swiper'
 export default function WorkoutSlider() {
