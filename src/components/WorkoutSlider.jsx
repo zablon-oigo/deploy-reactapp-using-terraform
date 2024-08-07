@@ -18,13 +18,13 @@ export default function WorkoutSlider() {
         slidesPerView:4,
       },
     }}
-    moduless={[Navigation]}
+    modules={[Navigation]}
     className='workoutSlider'
     >
       {programs.map((program,idx)=>{
         const{image,name}=program
         return <SwiperSlide className='max-w-[320px] max-h-[320px] relative' key={idx}>
-         <img src={program.image} alt="" className="object-cover w-full h-full" />
+         <img src={image} alt="" className="object-cover w-full h-full" />
          <div className="absolute left-[20px] bottom-[20px]  bg-white h-[26px] px[14px] flex items-center rounded-[1px]">
           <div className="text-sm font-semibold font-primary text-neutral-500">
             {name}
