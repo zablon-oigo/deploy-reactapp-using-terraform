@@ -12,7 +12,7 @@ export default function Workout() {
                 <span className="text-primary-200">.</span>
             </h2>
         </div>
-        <div className="">
+        <div className=""data-aos='fade-up' data-aos-delay='300'>
           <WorkoutSlider/>
         </div>
     </section>
