@@ -19,6 +19,25 @@ export default function PlanList({plans}) {
                     </div>
                     <span className="">/month</span>
                     </div>
+                    <div className="">
+                        <ul className="flex flex-col mb-8 gap-y-4">
+                            {list.map((item,idx)=>{
+                                return(
+                                    <li className="flex items-center gap-x-[10px]"key={idx}>
+                                    <BsCheckCircleFill className='text-lg'/>
+                                    <div className="">
+                                        {item.name}
+                                    </div>
+                                </li>
+                                )
+
+                            })}
+                        </ul>
+                        <button className={`${currentIndex===index?'bg-white text-neutral-500':'border border-neutral-500'} btn btn-lg  rounded-[1px] lg:mx-auto`}>
+                            buy
+                            
+                        </button>
+                    </div>
                   </div>
                   
                 </div>
