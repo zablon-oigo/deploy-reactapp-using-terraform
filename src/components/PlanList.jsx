@@ -9,7 +9,7 @@ export default function PlanList({plans}) {
             return(
                 <div onClick={()=>{setIndex(currentIndex)}} className="w-full md:max-w-[620px] lg:max-w-[405px] rounded-sm px-4 lg:min-h-[550px]" key={currentIndex}>
                   <div className={`${currentIndex===index?'bg-neutral-500 text-white':'bg-neutral-400/10 text-neutral-500'}`}>
-                    <div className="">
+                    <div className={`${currentIndex===index ?'bg-white text-neutral-500':'bg-neutral-500 text-white'}h-[26px] font-primary text-sm font-semibold`}>
                     {name}
                     </div>
                     <div className="">
@@ -34,8 +34,7 @@ export default function PlanList({plans}) {
                             })}
                         </ul>
                         <button className={`${currentIndex===index?'bg-white text-neutral-500':'border border-neutral-500'} btn btn-lg  rounded-[1px] lg:mx-auto`}>
-                            buy
-                            
+                          join now
                         </button>
                     </div>
                   </div>
