@@ -7,7 +7,7 @@ export default function PlanList({plans}) {
         {plans.map((plan,currentIndex)=>{
             const{name,price,list,delay}=plan
             return(
-                <div onClick={()=>{setIndex(currentIndex)}} className="w-full md:max-w-[620px] lg:max-w-[405px] rounded-sm px-4 lg:min-h-[550px]" key={currentIndex}>
+                <div onClick={()=>{setIndex(currentIndex)}} className="w-full md:max-w-[620px] lg:max-w-[405px] rounded-sm px-4 lg:min-h-[550px]" key={currentIndex}  data-aos='fade-up' data-aos-offset='200' data-aos-delay={delay}>
                   <div className={`${currentIndex===index?'bg-neutral-500 text-white':'bg-neutral-400/10 text-neutral-500'} flex justify-center flex-col items-center py-[40px] px-[30px]  lg:min-h-[550px] transition duration-100`}>
                     <div className="">
                     <div className={`${currentIndex === index ? 'text-neutral-500 bg-white' : 'bg-neutral-500 text-white'} h-[26px] font-primary text-sm font-semibold flex justify-center items-center`}
