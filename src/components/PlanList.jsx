@@ -17,8 +17,12 @@ export default function PlanList({plans}) {
                     </span>
                   </div>
 
-                    <div className="mb-2">
-                    <span className="font-semibold">{price}$/month</span>
+                    <div className="flex flex-row items-center justify-center font-extrabold text-center font-primary">
+                    <div className="text-[40px] lg:text-[50px]">
+                    <span className="">{price}</span>
+                    <span className=""> $</span>
+                    </div>
+                    <span className="ml-2">/month</span>
                     </div>
                     </div>
                     <div className="">
