@@ -8,16 +8,18 @@ export default function PlanList({plans}) {
             const{name,price,list,delay}=plan
             return(
                 <div onClick={()=>{setIndex(currentIndex)}} className="w-full md:max-w-[620px] lg:max-w-[405px] rounded-sm px-4 lg:min-h-[550px]" key={currentIndex}>
-                  <div className={`${currentIndex===index?'bg-neutral-500 text-white':'bg-neutral-400/10 text-neutral-500'}`}>
-                    <div className={`${currentIndex===index ?'bg-white text-neutral-500':'bg-neutral-500 text-white'}h-[26px] font-primary text-sm font-semibold min-w-min mx-auto px-[14px] flex items-center  justify-center mb-6`}>
-                    {name}
-                    </div>
+                  <div className={`${currentIndex===index?'bg-neutral-500 text-white':'bg-neutral-400/10 text-neutral-500'} flex justify-center flex-col items-center py-[40px] px-[30px]  lg:min-h-[550px] transition duration-100`}>
                     <div className="">
-                    <div className="">
-                    <span className="">{price}</span>
-                    <span className="">$</span>
+                    <div className={`${currentIndex === index ? 'text-neutral-500 bg-white' : 'bg-neutral-500 text-white'} h-[26px] font-primary text-sm font-semibold flex justify-center items-center`}
+                  >
+                    <span>
+                      {name}
+                    </span>
+                  </div>
+
+                    <div className="mb-2">
+                    <span className="font-semibold">{price}$/month</span>
                     </div>
-                    <span className="">/month</span>
                     </div>
                     <div className="">
                         <ul className="flex flex-col mb-8 gap-y-4">
