@@ -11,7 +11,7 @@ export default function Accordion({accordion}) {
                     {question}
                 </h6>
                 <div className="">
-                    {isOpen? <FaChevronCircleUp className='text-[20px]'/>:<FaChevronCircleDown className='text-[20px]'/>}
+                    {isOpen? <FaChevronCircleUp className='text-[20px] text-neutral-500'/>:<FaChevronCircleDown className='text-[20px] text-neutral-500'/>}
                 </div>
             </div>
         </div>
