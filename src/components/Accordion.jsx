@@ -14,6 +14,11 @@ export default function Accordion({accordion}) {
                     {isOpen? <FaChevronCircleUp className='text-[20px] text-neutral-500'/>:<FaChevronCircleDown className='text-[20px] text-neutral-500'/>}
                 </div>
             </div>
+            <div className={`${isOpen?'min-h-[200px] lg:min-h-[160px]':'min-h-0'}max-h-0 overflow-hidden flex justify-center transition-all px-[30px]`}>
+                <div className="mt-6">
+                    {answer}
+                </div>
+            </div>
         </div>
 
     </section>
