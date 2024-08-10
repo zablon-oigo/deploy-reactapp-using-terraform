@@ -15,7 +15,7 @@ export default function Faq() {
                     </span>
                 </h2>
             </div>
-            <div className="">
+            <div className="flex flex-col gap-y-4">
                 {accordions.map((accordion,idx)=>{
                    return(
                     <Accordion accordion={accordion}  key={idx}/>
