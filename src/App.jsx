@@ -6,6 +6,7 @@ import Header from "./components/Header"
 import Workout from "./components/Workout";
 import Pricing from "./components/Pricing";
 import Community from "./components/Community";
+import Faq from "./components/Faq";
 
 function App() {
   Aos.init({
@@ -21,6 +22,7 @@ function App() {
      <Workout/>
      <Pricing/>
      <Community/>
+     <Faq/>
     </div>
     </>
   )
