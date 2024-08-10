@@ -4,7 +4,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 export default function CommunitySlider({testimonials}) {
   return (
-    <Swiper slidesPerView={3} spaceBetween={32}  grabCursor={true}   centeredSlides={'auto'} modules={[
+    <Swiper slidesPerView={4} spaceBetween={32}  grabCursor={true}   centeredSlides={'auto'} modules={[
 
     ]}>
         {testimonials.map((testimonial,idx)=>{
@@ -14,7 +14,7 @@ export default function CommunitySlider({testimonials}) {
                     <div className="">
                         <img src={image} alt="" className="" />
                     </div>
-                    <div className="">
+                    <div className="absolute bottom-[30px] text-white text-center">
                         <span className="mb-8 text-lg italic font-light">
                             {message}
                         </span>
