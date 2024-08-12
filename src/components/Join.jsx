@@ -15,6 +15,12 @@ export default function Join() {
                             Want to join
                             <span className=""></span>
                         </h2>
+                        <p className="">
+                            {subtitle}
+                        </p>
+                        <button className=''>
+                            {btnText}
+                        </button>
                     </div>
                 </div>
             </div>
