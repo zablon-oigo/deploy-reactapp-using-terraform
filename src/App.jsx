@@ -7,6 +7,7 @@ import Workout from "./components/Workout";
 import Pricing from "./components/Pricing";
 import Community from "./components/Community";
 import Faq from "./components/Faq";
+import Join from "./components/Join";
 
 function App() {
   Aos.init({
@@ -23,6 +24,7 @@ function App() {
      <Pricing/>
      <Community/>
      <Faq/>
+     <Join/>
     </div>
     </>
   )
