@@ -3,10 +3,10 @@ import {join} from '../data'
 export default function Join() {
   const {image,title,subtitle,btnText}=join;
   return (
-    <div className=''>
+    <div className='bg-neutral-500  min-h-[537px]'>
         <div className="container mx-auto">
-            <div className="flex flex-col -space-y-24 md:flex-row md:items-center md:-space-x-12 lg:-space-y-0">
-                <div className="">
+            <div className="">
+                <div className="flex flex-col -space-y-24 md:flex-row md:items-center md:-space-x-12 lg:-space-y-0">
                     <div className="-mt-[80px] max-w-[276px] md:max-w-[442px] lg:max-w-full">
                         <img src={image} alt="" className="" />
                     </div>
