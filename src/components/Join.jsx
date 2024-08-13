@@ -7,10 +7,17 @@ export default function Join() {
         <div className="container mx-auto">
             <div className="">
                 <div className="flex flex-col -space-y-24 md:flex-row md:items-center md:-space-x-12 lg:-space-y-0">
-                    <div className="-mt-[80px] max-w-[276px] md:max-w-[442px] lg:max-w-full">
+                    <div className="-mt-[80px] max-w-[276px] md:max-w-[442px] lg:max-w-full"
+                    data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-delay="200"
+                    >
                         <img src={image} alt="" className="" />
                     </div>
-                    <div className="max-w-[350px]">
+                    <div className="max-w-[350px]"
+                                        data-aos="fade-left"
+                                        data-aos-offset="100"
+                                        data-aos-delay="200">
                         <h2 className="h1 md:text-[60px] md:leading-[62px] mb-4 lg:mb-6 text-white">
                             Wanna join
                             <span className="text-primary-200">
