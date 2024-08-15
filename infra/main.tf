@@ -2,7 +2,7 @@ terraform {
   backend "s3" {
     bucket         = "cloudmytribeassignment"
     key            = "terraform/state.tfstate" 
-    region         ="eu-north-1"
+    region         = "eu-north-1"
   }
 }
 provider "aws" {
