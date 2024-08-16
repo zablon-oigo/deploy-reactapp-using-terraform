@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "cloudmytribeassignment"
-    key            = "terraform/terraform.tfstate" 
-    region         = "eu-north-1"
+    bucket = "cloudmytribeassignment"
+    key    = "terraform/terraform.tfstate"
+    region = "eu-north-1"
   }
 }
 provider "aws" {
@@ -25,8 +25,8 @@ locals {
 }
 resource "aws_s3_object" "object" {
   for_each = { for file in local.dist_files : file.key => file }
-  bucket  = data.aws_s3_bucket.web_bucket.bucket
-  key     = each.value.key
-  source  = each.value.source
-  etag    = filemd5(each.value.source)
+  bucket   = data.aws_s3_bucket.web_bucket.bucket
+  key      = each.value.key
+  source   = each.value.source
+  etag     = filemd5(each.value.source)
 }
