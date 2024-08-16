@@ -37,7 +37,7 @@ jobs:
     - name: Terraform Operations
       working-directory: infra
       run: |
-        terraform init -migrate-state
+        terraform init -reconfigure
         terraform fmt -check
         terraform plan -input=false
         terraform apply -auto-approve -input=false
