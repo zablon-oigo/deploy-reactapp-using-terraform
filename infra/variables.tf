@@ -1,15 +1,15 @@
 variable "secret_key" {
-    description = "secret key"
-  
+  description = "secret key"
+
 }
 variable "access_key" {
-  description = "acess key"  
+  description = "acess key"
 }
 variable "region" {
-    description = "default region"
-  
+  description = "default region"
+
 }
 variable "bucket_name" {
-    description = "bucket name"
-  
+  description = "bucket name"
+
 }
