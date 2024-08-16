@@ -7,9 +7,11 @@ variable "access_key" {
 }
 variable "region" {
   description = "default region"
+  default = "eu-north-1"
 
 }
 variable "bucket_name" {
   description = "bucket name"
+  default = "cloudmytribeassignment"
 
 }
