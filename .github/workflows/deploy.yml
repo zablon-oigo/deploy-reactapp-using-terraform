@@ -38,8 +38,8 @@ jobs:
       working-directory: infra
       run: |
         terraform init
-        terraform plan -input=false
-        terraform apply -auto-approve -input=false
+        terraform plan -var="access_key=${{ secrets.AWS_ACCESS_KEY_ID }}" -var="secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }}" -input=false
+        terraform apply -var="access_key=${{ secrets.AWS_ACCESS_KEY_ID }}" -var="secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }}" -auto-approve -input=false
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     - name: Terraform Output
       working-directory: infra
